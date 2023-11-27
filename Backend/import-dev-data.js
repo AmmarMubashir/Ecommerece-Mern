@@ -22,17 +22,10 @@ const Women = JSON.parse(fs.readFileSync(`./utils/data/women.json`, "utf-8"));
 const DB =
   "mongodb+srv://muhammadammarmubashir:8gZ61keZXKHEDKQw@cluster0.wlzikoh.mongodb.net/test?retryWrites=true&w=majority";
 ////// Connection to Database
-mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-  .then((con) => {
-    // console.log(con.connections);
-    console.log("Connected to Database Successfully!");
-  });
+mongoose.connect(DB).then((con) => {
+  // console.log(con.connections);
+  console.log("Connected to Database Successfully!");
+});
 
 const importData = async () => {
   try {

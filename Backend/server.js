@@ -9,12 +9,7 @@ dotenv.config({ path: "./config.env" });
 const DB =
   "mongodb+srv://muhammadammarmubashir:8gZ61keZXKHEDKQw@cluster0.wlzikoh.mongodb.net/test?retryWrites=true&w=majority";
 mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
+  .connect(DB)
   .then((con) => {
     console.log("DB connection successful!");
   })
