@@ -165,15 +165,7 @@ const Footer = () => {
             <span className="ml-3 text-xl">Ecommerce Store</span>
           </a>
           <p className="text-sm text-teal-50 sm:ml-6 sm:mt-0 mt-4">
-            © {new Date().getFullYear()} Syed Moazam Ali.
-            <a
-              href="https://syedmoazamali.netlify.app/"
-              rel="noopener noreferrer"
-              className="text-teal-50 ml-1 hover:decoration-style"
-              target="_blank"
-            >
-              @SyedMoazamAli
-            </a>
+            © {new Date().getFullYear()}
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">

@@ -1,7 +1,7 @@
 import axios from "axios";
-export const API_URL =
-  // "https://ecommerece-mern-21dr.vercel.app/";
-  "http://localhost:8000";
+export const API_URL = "http://localhost:8000";
+// ("https://ecommerece-mern-21dr.vercel.app/");
+// "http://localhost:8000";
 //  Working Fine
 // "https://ecommerce-mern-api-beta.vercel.app";
 //   As for fetching data from backend we need to send token
